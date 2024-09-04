@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #2c314a;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+}
+
+.pokemon-list,
+.right-content {
+  flex-basis: 50%;
+}
+
+.left-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-gap: 2rem;
+}
+
+.right-content {
+  width: 50%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  img {
+    margin: 2rem;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+  }
+  .text {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+  }
+}
+.card {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 1rem;
+  background-color: #de9151;
+  text-transform: capitalize;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.abilities {
+  color: white;
+  text-transform: capitalize;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  gap: 10px;
+
+  .group {
+    padding: 0.5rem;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #a63d40;
+  }
+}
+
+.base-stats {
+  margin-top: 20px;
+  h3 {
+    margin-top: 5px;
+    color: white;
+    text-transform: capitalize;
+  }
+}
+
+.btn-group {
+  display: flex;
+
+  button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 40px 10px 20px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #a63d40;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.pokedex {
+  display: block;
+  margin: auto;
+  margin-bottom: 28px;
+}
